@@ -73,12 +73,12 @@ $(function(){
     $('.sc-tabnews .btn-autoplay').click(function(){
         if ( $(this).hasClass('on') ) {
             tabSlide.autoplay.start();
-            $(this).removeClass('on');
             $(this).children('.blind').text('자동재생 정지');
+            $(this).removeClass('on');
         } else {
             tabSlide.autoplay.stop();
-            $(this).addClass('on');
             $(this).children('.blind').text('자동재생 적용');
+            $(this).addClass('on');
         }
     });
     
@@ -110,9 +110,11 @@ $(function(){
         if ( $(this).hasClass('on') ) {
             bannerSlide.autoplay.start();
             $(this).children('.blind').text('자동재생 정지');
+            $(this).removeClass('on');
         } else {
             bannerSlide.autoplay.stop();
             $(this).children('.blind').text('자동재생 적용');
+            $(this).addClass('on');
         }
     });
 
